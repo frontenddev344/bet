@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-  font-size: 37px;
+  font-size: 30px;
   line-height: normal;
   font-weight: 500;
   color: #83bd75;
@@ -321,7 +321,7 @@ header.site-header.sticky {
 
 /*terms-conditon-end/
 
-/*home-css-start*/
+/*travel-css-start*/
 section.homebanner {
   position: relative;
   height: 450px;
@@ -407,9 +407,92 @@ section.hometext {
   text-align: justify;
 }
 
-/*home-css-end*/
+/*travel-css-end*/
+/*europebanner-css-start*/
+.europebanner {
+  position: relative;
+  height: 450px;
+  background-image: url(../images/europebanner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.europebanner::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.62);
+  height: 450px;
+}
+
+.europe-btn a {
+  background: #83bd75;
+  font-size: 17px;
+  color: #0C0B0B;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 1px solid #83bd75;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.europe-btn a:hover {
+  border: 1px solid #83bd75;
+  background-color: transparent;
+  color: #83bd75;
+}
+
+.europecards-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.europecards-text p {
+  padding: 20px 0;
+}
+
+.europeflex {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-top: 4px solid #83bd75;
+  margin-bottom: 25px;
+}
+
+.europecards-text.left {
+  padding-left: 20px;
+}
+
+section.europecards {
+  padding: 50px 0 0 0;
+}
+
+.europecards-main img {
+  height: 320px;
+  object-fit: cover;
+}
+
+/*europebanner-css-end*/
+/*greecebanner-css-start*/
+.greecebanner {
+  position: relative;
+  height: 450px;
+  background-image: url(../images/greecebanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.greecebanner::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.62);
+  height: 450px;
+}
+
+/*greecebanner-css-end*/
 /*aboutbanner-css-start*/
-section.aboutbanner {
+.aboutbanner {
   position: relative;
   height: 450px;
   background-image: url(../images/aboutbanner.jpeg);
@@ -418,7 +501,7 @@ section.aboutbanner {
   background-position: center;
   object-fit: cover;
 }
-section.aboutbanner::after {
+.aboutbanner::after {
   position: absolute;
   content: "";
   inset: 0;

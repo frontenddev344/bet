@@ -203,8 +203,6 @@ header.site-header.sticky {
     }
 }
 
-
-
 /*footer-css-end*/
 
 /*privacy-policy start*/
@@ -305,7 +303,7 @@ header.site-header.sticky {
 
 /*terms-conditon-end/
 
-/*home-css-start*/
+/*travel-css-start*/
 section.homebanner {
     position: relative;
     height: 450px;
@@ -400,11 +398,101 @@ section.hometext {
     }
 }
 
+/*travel-css-end*/
 
-/*home-css-end*/
+/*europebanner-css-start*/
+.europebanner {
+    position: relative;
+    height: 450px;
+    background-image: url(../images/europebanner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+
+    &::after {
+        position: absolute;
+        content: '';
+        inset: 0;
+        background-color: rgb(0 0 0 / 62%);
+        height: 450px;
+    }
+}
+
+.europe-btn {
+    a {
+        background: $clr-lightgreen;
+        font-size: 17px;
+        color: $clr-black;
+        text-decoration: none;
+        text-transform: capitalize;
+        border: 1px solid $clr-lightgreen;
+        padding: 10px 20px;
+        border-radius: 5px;
+
+        &:hover {
+            border: 1px solid $clr-lightgreen;
+            background-color: transparent;
+            color: $clr-lightgreen;
+        }
+    }
+}
+
+.europecards-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    p {
+        padding: 20px 0;
+    }
+}
+
+.europeflex {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-top: 4px solid $clr-lightgreen;
+    margin-bottom: 25px;
+}
+
+.europecards-text.left {
+    padding-left: 20px;
+}
+
+section.europecards {
+    padding: 50px 0 0 0;
+}
+
+.europecards-main img {
+    height: 320px;
+    object-fit: cover;
+}
+
+/*europebanner-css-end*/
+
+/*greecebanner-css-start*/
+.greecebanner {
+    position: relative;
+    height: 450px;
+    background-image: url(../images/greecebanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+
+    &::after {
+        position: absolute;
+        content: '';
+        inset: 0;
+        background-color: rgb(0 0 0 / 62%);
+        height: 450px;
+    }
+}
+
+/*greecebanner-css-end*/
 
 /*aboutbanner-css-start*/
-section.aboutbanner {
+.aboutbanner {
     position: relative;
     height: 450px;
     background-image: url(../images/aboutbanner.jpeg);
@@ -421,6 +509,7 @@ section.aboutbanner {
         height: 450px;
     }
 }
+
 .bottomtext span {
     color: $clr-black;
     font-size: 16px;
@@ -444,9 +533,11 @@ section.aboutbanner {
     background: transparent;
     color: $clr-lightgreen;
 }
-.input-control:focus-visible{
+
+.input-control:focus-visible {
     outline: none;
 }
+
 textarea.input-control {
     resize: none;
     height: auto;
