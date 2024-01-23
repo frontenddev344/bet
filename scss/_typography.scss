@@ -28,6 +28,7 @@ h1 {
     line-height: 75px;
     color: $clr-white;
     font-family: "Noto Sans", sans-serif;
+
     @include mq(md) {
         font-size: 26px;
     }
@@ -47,6 +48,7 @@ h2 {
 
 h3 {
     color: $clr-lightgreen;
+
     @include mq(md) {
         font-size: 18px !important;
     }
